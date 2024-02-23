@@ -257,6 +257,8 @@ GameObject:
   - component: {fileID: 2774238819666822284}
   - component: {fileID: 6760329298689826815}
   - component: {fileID: 4440712930634207047}
+  - component: {fileID: 5434418566428977889}
+  - component: {fileID: 5955544366644477845}
   m_Layer: 0
   m_Name: PlayerCtrl
   m_TagString: Untagged
@@ -331,6 +333,50 @@ MonoBehaviour:
   InLocalSpace: 0
   Interpolate: 1
   SlerpPosition: 0
+--- !u!114 &5434418566428977889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022997648898020860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4353c03af09e46e42b8b8a379434f00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: 0dd310794f98cc942b822d425daf4e91, type: 2}
+  bodyTransform: {fileID: 8380925916878966807}
+  rb2D: {fileID: 5955544366644477845}
+  movementSpeed: 4
+  tunningRate: 70
+--- !u!50 &5955544366644477845
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022997648898020860}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4714074586200092434
 GameObject:
   m_ObjectHideFlags: 0
