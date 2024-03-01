@@ -63,6 +63,4 @@ public class PlayerMove : NetworkBehaviour
     {
         previousMovementInpult = movementInpult;
     }
-
-
 }
